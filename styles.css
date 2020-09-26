@@ -1,0 +1,190 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: spliton; /* this is the universal selector that controls the font and spacing of the page */
+}
+
+@font-face {
+font-family: "spliton";
+src: url("spliton.eot");
+src:
+url("spliton-webfont.woff") format("woff"),
+url("SplitOn.otf") format("opentype"),
+url("spliton.svg#filename") format("svg"); /* custom font i downloaded and have in folder called font used steps from this site https://www.balbooa.com/knowledgebase/32-documentation-faq-joomla/176-how-to-add-custom-font-to-website-through-fontface */
+}
+
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(1.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center; /* background image, shade, and position of the image using 100vh which i was not familar with and had to use a guide for from this site https://www.sitepoint.com/css-viewport-units-quick-start/ */
+
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 30px /*this is for the links to the other sites to positon it to the right and to space it from the top of the page */
+}
+
+ul li{
+	display: inline-block; /*this sets the links in the upper right to be horizontal and not verticaly listed */
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #fff /*this creates the border and allows the universal selector font-family to kick in on the links */
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000; /* this creates a highlight effect when you hover over a link and turns it white and the text from white to black */
+
+}
+
+h6{
+	font-family: Century Gothic
+	position: absolute;
+    bottom: 0;
+    right: 0;   /*position of the reference of the background */
+  }
+
+.cc {
+    position:absolute;
+    bottom:0;
+    left:0;
+    font-family: Century Gothic;
+    font-size: 13px;
+    color: #fff; /* the font and color of the backgrond image reference text */
+    
+	}
+
+.wandering {
+		position: absolute;
+		top: 85%;
+		left:50%;
+		transform: translate(-50%,-50%); /*the subtext of the picture of the title position */
+}
+
+.wandering p{
+
+	
+    font-size: 40px;
+    
+    text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #fff /* the font and border of the sub text of the home page picture  */
+
+
+
+
+}
+
+	.logo img{
+		float: left;
+		width: 370px;
+		height: auto;
+		
+	}  /* the logo in the upperleft location and size */
+
+.ryu img{
+	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	width: 400px;
+  	height: 600px;
+  	transform: translate(-50%, -50%);  /* home page image size and location  */
+}
+	
+.hometitle{
+	position: absolute;
+	top: 15%;
+	left:50%;
+	transform: translate(-50%,-50%); /* title and location of home page */
+} 	
+
+.hometitle h1{
+	color: #fff;
+	font-size: 70px; /* font/color of home title */
+
+}
+
+.pic img{
+	position: fixed;
+  	top:  40%;
+  	left: 50%; 	
+  	transform: translate(-50%, -50%); /* position of images */
+
+}
+
+.title{
+	position: fixed;
+	top: 5%;
+	left:50%;
+	transform: translate(-50%,-50%); /* position of titles  */
+} 	
+
+.title h1{
+	color: #fff;
+	font-size: 70px; /* font/color of titles */
+
+}
+
+.question {
+	position: absolute;
+	top: 70%;
+	left:50%;
+	transform: translate(-50%,-50%); /* position of questions  */
+
+}
+
+.question p{
+	font-family: Century Gothic;
+    font-size: 32px;
+    
+    text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #fff /*font/color and border of the question */
+
+
+}
+
+.answer {
+	position: absolute;
+	top: 85%;
+	left:50%;
+	transform: translate(-50%,-50%); /* position of answer  */
+
+
+
+}
+
+.answer p{
+	padding: 5px 20px;
+	border: 1px solid #fff;
+	font-family: Century Gothic;
+    font-size: 23px;
+    color: #fff    /* font and color of the answer, plus the border around it */
+}
+
+.ref {
+	position: absolute;
+	top: 66%;
+	left:50%;
+	transform: translate(-50%,-50%); /*position of the reference for the image used */
+
+}
+
+.ref p{
+
+	font-family: Century Gothic;
+    font-size: 10px;
+    color: #fff
+
+
+} /* font and color for reference text under picture */
+
